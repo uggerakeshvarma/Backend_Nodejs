@@ -37,5 +37,5 @@ app.listen(PORT, () => {
 })
 
 app.use('/' , (erq, res) => {
-    res.send("<h1> Ilove You</h1>")
+    res.send("<h1> I love You</h1>")
 })
