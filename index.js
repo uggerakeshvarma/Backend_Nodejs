@@ -35,3 +35,7 @@ PORT =  process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log(`Connected Seever SucsesFully  ${PORT}`)
 })
+
+app.use('/' , (erq, res) => {
+    res.send("<h1> Ilove You</h1>")
+})
