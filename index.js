@@ -30,7 +30,7 @@ app.use('/Product', ProductRoute)
 app.use('/uploads', express.static('uploads'))
 
 
-PORT = 5000
+PORT =  process.env.PORT || 5000
 
 app.listen(PORT, () => {
     console.log(`Connected Seever SucsesFully  ${PORT}`)
