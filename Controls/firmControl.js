@@ -3,6 +3,7 @@ const { json } = require('body-parser');
 const Firm = require('../Modul/Form');
 const Vender = require('../Modul/Vender')
 const multer = require('multer');
+const path = require('path')
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
