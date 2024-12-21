@@ -10,4 +10,4 @@ Router.post('/loginIn', venderController.venderLogin);
 Router.get('/GetVendor', venderController.getallVender);
 Router.get('/Getby/:id' , venderController.getvenderbyid)
 
-module.exports = Router;   
+module.exports = Router;     

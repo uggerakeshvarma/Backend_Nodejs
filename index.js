@@ -10,6 +10,7 @@ const ProductRoute = require('./Routes/ProductRoute')
 const path = require('path')
 
 
+
 const app = express()
 app.use(cors())
 app.use(bodyparser.json())
