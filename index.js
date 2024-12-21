@@ -37,6 +37,6 @@ app.listen(PORT, () => {
     console.log(`Connected Seever SucsesFully  ${PORT}`)
 })
 
-app.use('/' , (erq, res) => {
+app.use('/' , (req, res) => {
     res.send("<h1> I love You</h1>")
 })
