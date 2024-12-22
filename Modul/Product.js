@@ -25,9 +25,9 @@ const ProductSchema = new mongoose.Schema({
     },
 
     bestSeller: {
-        type: Boolean
-
-    },
+        type: Boolean,  
+        required: true,
+      },
     disciption: {
         typr: String
     },
