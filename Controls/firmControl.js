@@ -39,9 +39,12 @@ const addfirm = async (req, res) => {
             vender: vender._id
         })
         const Savefirm = await firm.save()
+
+        const firmId = Savefirm._id
+
         vender.firm.push(Savefirm)
         await vender.save()
-        return res.status(200).json({ message: "Firm Added Succesfully" })
+        return res.status(200).json({ message: "Firm Added Succesfully" , firmId })
 
     } catch (error) {
         console.error(error)
